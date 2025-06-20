@@ -1,2 +1,2 @@
 # Challengers
-10 days challenge to solve 20 problems
+Challenge yourself to be a better version of you
