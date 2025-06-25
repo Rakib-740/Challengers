@@ -21,7 +21,7 @@ int main() {
         {
             cin >> a >> b;
 
-            cout << s.substr(a - 1, b - l + 1) << endll;
+            cout << s.substr(a - 1, b - a + 1) << endll;
             
         }
         else if(op == "pop_back")
