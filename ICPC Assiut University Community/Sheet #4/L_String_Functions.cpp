@@ -21,7 +21,11 @@ int main() {
         {
             cin >> a >> b;
 
-            cout << s.substr(a - 1, b - a + 1) << endll;
+            for(int i = min(a, b) - 1; i < max(a,b); i++)
+            {
+                cout << s[i];
+            }
+            cout << endll;
             
         }
         else if(op == "pop_back")
