@@ -11,10 +11,12 @@ int main() {
     int x; cin >> x;
 
     vector<int> a(x);
+    set<int> arr;
 
     for(int i = 0; i < x; i++)
     {
         cin >> a[i];
+        arr.insert(a[i]);
     }
 
     int y; cin >> y;
@@ -24,19 +26,20 @@ int main() {
     for(int i = 0; i < y; i++)
     {
         cin >> b[i];
-    }
-
-    set<int> arr;
-
-    for(int i = 0; i < x; i++)
-    {
-        arr.insert(a[i]);
-    }
-
-    for(int i = 0; i < y; i++)
-    {
         arr.insert(b[i]);
     }
+
+    
+
+    // for(int i = 0; i < x; i++)
+    // {
+    //     arr.insert(a[i]);
+    // }
+
+    // for(int i = 0; i < y; i++)
+    // {
+    //     arr.insert(b[i]);
+    // }
     
     if(n == arr.size())
     {
