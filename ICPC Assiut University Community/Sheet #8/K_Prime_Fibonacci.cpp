@@ -26,7 +26,6 @@ int main() {
         fib[i] = fib[i - 1] + fib[i - 2];
     }
 
-    // Precompute prime status for each Fibonacci number
     vector<string> fib_prime(51);
     for (int i = 1; i <= 50; ++i) {
         fib_prime[i] = is_prime(fib[i]) ? "prime" : "not prime";
