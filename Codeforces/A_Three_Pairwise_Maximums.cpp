@@ -7,27 +7,34 @@ int main() {
     cin.tie(nullptr);
 
     int t; cin >> t;
-    while (t--) {
+    while (t--) 
+    {
         int x, y, z; 
         cin >> x >> y >> z;
 
         int mx = max({x, y, z});
         int cnt = (x==mx) + (y==mx) + (z==mx);
 
-        if (cnt < 2) {
+        if (cnt < 2) 
+        {
             cout << "NO" << endll;
             continue;
         }
 
         cout << "YES" << endll;
         int s;
-        if (x==mx && y==mx) {            // x,y are the two maxima
+        if (x==mx && y==mx) 
+        {            
             s = z;
             cout << mx << " " << s << " " << s << endll;
-        } else if (x==mx && z==mx) {     // x,z are the two maxima
+        } 
+        else if (x==mx && z==mx) 
+        {     
             s = y;
             cout << s << " " << mx << " " << s << endll;
-        } else {                         // y,z are the two maxima
+        } 
+        else 
+        {              
             s = x;
             cout << s << " " << s << " " << mx << endll;
         }
